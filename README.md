@@ -15,7 +15,6 @@
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
 # Extensiones de VSCODE
-https://marketplace.visualstudio.com/
 
 - [Paste JSON as code](https://marketplace.visualstudio.com/items?itemName=typeguard.quicktype-vs)
 - [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
