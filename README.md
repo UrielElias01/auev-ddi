@@ -13,3 +13,14 @@
 - [Flutter SDK](https://docs.flutter.dev/get-started/install)
 - [NodeJS](https://nodejs.org/en)
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+
+# Extensiones de VSCODE
+https://marketplace.visualstudio.com/
+
+- [Paste JSON as code](https://marketplace.visualstudio.com/items?itemName=typeguard.quicktype-vs)
+- [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
+- [Bloc](https://marketplace.visualstudio.com/items?itemName=FelixAngelov.bloc)
+- [Dart Language](https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code)
+- [Fultter Support](https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter)
+- [Pubspec Assist](https://marketplace.visualstudio.com/items?itemName=jeroen-meijer.pubspec-assist)
+- [Lorem Ipsum](https://marketplace.visualstudio.com/items?itemName=Tyriar.lorem-ipsum)
