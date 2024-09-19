@@ -33,7 +33,7 @@ class _CounterFunctionScreenState extends State<CounterFunctionScreen> {
               style:
                   const TextStyle(fontSize: 160, fontWeight: FontWeight.w100)),
           Text(
-            '${clickCounter == 1 ? 'clic' : 'clics'}',
+            'clic${clickCounter == 1 ? '' : 's'}',
             style: const TextStyle(fontSize: 25),
           )
         ],
@@ -62,8 +62,8 @@ class _CounterFunctionScreenState extends State<CounterFunctionScreen> {
           CustomButton(
               icon: Icons.exposure_minus_1,
               onPressed: () {
-                clickCounter--;
                 if (clickCounter <= 0) return;
+                clickCounter--;
                 setState(() {});
               })
         ],

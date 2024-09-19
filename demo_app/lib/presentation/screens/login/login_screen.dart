@@ -35,14 +35,10 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Login'),
-        backgroundColor: Colors.blueGrey,
-      ),
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
-            colors: [Colors.blueGrey, Colors.grey],
+            colors: [Color.fromARGB(255, 138, 96, 139), Colors.grey],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
@@ -60,13 +56,32 @@ class _LoginScreenState extends State<LoginScreen> {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
+                    const Text(
+                      'Login',
+                      style: TextStyle(
+                        fontSize: 32,
+                        fontWeight: FontWeight.bold,
+                        color: Color.fromARGB(255, 127, 96, 139),
+                      ),
+                    ),
+                    const SizedBox(height: 20),
                     TextField(
                       controller: _usernameController,
                       decoration: const InputDecoration(
                         labelText: 'Nombre de usuario',
+                        labelStyle:
+                            TextStyle(color: Color.fromARGB(255, 127, 96, 139)),
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.all(Radius.circular(12)),
                         ),
+                        focusedBorder: OutlineInputBorder(
+                          borderSide: BorderSide(
+                              color: Color.fromARGB(255, 127, 96, 139)),
+                          borderRadius: BorderRadius.all(Radius.circular(12)),
+                        ),
+                      ),
+                      style: const TextStyle(
+                        fontSize: 18,
                       ),
                     ),
                     const SizedBox(height: 20),
@@ -74,11 +89,21 @@ class _LoginScreenState extends State<LoginScreen> {
                       controller: _passwordController,
                       decoration: const InputDecoration(
                         labelText: 'Contraseña',
+                        labelStyle:
+                            TextStyle(color: Color.fromARGB(255, 127, 96, 139)),
                         border: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(12)),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderSide: BorderSide(
+                              color: Color.fromARGB(255, 127, 96, 139)),
                           borderRadius: BorderRadius.all(Radius.circular(12)),
                         ),
                       ),
                       obscureText: true,
+                      style: const TextStyle(
+                        fontSize: 18,
+                      ),
                     ),
                     const SizedBox(height: 20),
                     SizedBox(
@@ -86,12 +111,21 @@ class _LoginScreenState extends State<LoginScreen> {
                       child: ElevatedButton(
                         onPressed: _login,
                         style: ElevatedButton.styleFrom(
+                          backgroundColor:
+                              const Color.fromARGB(255, 127, 96, 139),
+                          foregroundColor: Colors.white,
                           padding: const EdgeInsets.symmetric(vertical: 16.0),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12),
                           ),
                         ),
-                        child: const Text('Iniciar sesión'),
+                        child: const Text(
+                          'Iniciar sesión',
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                       ),
                     ),
                   ],
@@ -103,4 +137,10 @@ class _LoginScreenState extends State<LoginScreen> {
       ),
     );
   }
+}
+
+void main() {
+  runApp(const MaterialApp(
+    home: LoginScreen(),
+  ));
 }
